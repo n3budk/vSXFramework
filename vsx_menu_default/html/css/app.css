@@ -1,0 +1,51 @@
+.menu {
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	min-width: 250px;
+	color: #fff;
+	position: absolute;
+	background-color: #1f2533;
+	padding: 8px;
+	text-align: center;
+	border-radius: 7px;
+}
+
+.menu.align-top-left {
+	left: 40;
+	top: 40;
+}
+
+.menu .head {
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
+}
+
+.menu .menu-items {
+	max-height: 340px;
+	overflow-y: auto;
+}
+
+.menu .menu-items .menu-item {
+	height: 18px;
+	display: block;
+	text-indent: 5px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	border-radius: 7px;
+	font-size: 13px;
+	color: #ffffff;
+	padding: 7px;
+	text-align: center;
+}
+
+.menu .menu-items .menu-item.selected {
+	background-color: #11151d;
+}
+
+#element::-webkit-scrollbar {
+	display: none;
+}
+
+::-webkit-scrollbar {
+	display: none;
+}
