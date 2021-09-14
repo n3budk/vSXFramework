@@ -6,7 +6,7 @@ server_scripts {"lib/utils.lua", "base.lua", "database.lua", "modules/group.lua"
 
 client_scripts {"lib/utils.lua", "client/Tunnel.lua", "client/Proxy.lua", "client/base.lua", "client/player_state.lua",  "client/survival.lua", "client/identity.lua"}
 
-shared_scripts {"shared/config.lua", "shared/config.weapons.lua", "@vsx_core/imports.lua"}
+shared_scripts {"shared/Lang.lua", "shared/config.weapons.lua", "@vsx_core/imports.lua"}
 
 server_exports {"createConnection", "createCommand", "query", "checkTask"}
 

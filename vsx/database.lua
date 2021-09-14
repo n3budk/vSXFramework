@@ -102,5 +102,4 @@ MySQL.createCommand("vSX/get_money", "SELECT wallet,bank FROM vsx_user_moneys WH
 MySQL.createCommand("vSX/set_money", "UPDATE vsx_user_moneys SET wallet = @wallet, bank = @bank WHERE user_id = @user_id")
 
 MySQL.query("vSX/base_tables")
-MySQL.query("vSX/base_insert_tables")
 MySQL.query("vSX/base_insert_licenses_tables")

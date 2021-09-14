@@ -198,14 +198,6 @@ function tvSX.playSound(dict, name)
     PlaySound(-1, name, dict, 0, 0, 1)
 end
 
-function tvSX.Lang(item)
-    local lang = Config.Languages[Config.Language]
-    if lang and lang[item] then
-        return lang[item]
-    end
-    return item
-end
-  
 AddEventHandler("playerSpawned", function()
     TriggerServerEvent("vSXcli:playerSpawned")
 end)

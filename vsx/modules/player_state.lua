@@ -71,11 +71,3 @@ function tvSX.updateHealth(health)
         end
     end
 end
-
-function vSX.Lang(item)
-    local lang = Config.Languages[Config.Language]
-    if lang and lang[item] then
-        return lang[item]
-    end
-    return item
-end

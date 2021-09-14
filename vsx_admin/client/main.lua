@@ -67,5 +67,8 @@ AddEventHandler("vsx_admin:tpm", function()
             end
             Citizen.Wait(5)
         end
+		exports["vsx_notify"]:Alert(Lang("SERVER_NAME_NOTIFY"), Lang("TELEPORTED"), 5000, "info")
+    else
+		exports["vsx_notify"]:Alert(Lang("SERVER_NAME_NOTIFY"), Lang("NO_TELEPORTED"), 5000, "info")
     end
 end)

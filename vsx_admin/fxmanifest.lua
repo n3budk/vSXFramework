@@ -5,3 +5,5 @@ game "gta5"
 server_scripts {"@vsx/lib/utils.lua", "server/main.lua"}
 
 client_scripts {"client/main.lua"}
+
+shared_scripts {"@vsx/shared/Lang.lua"}

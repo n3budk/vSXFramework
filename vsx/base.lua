@@ -178,7 +178,7 @@ function vSX.ban(source, reason)
     local user_id = vSX.getUserId(source)
     if user_id ~= nil then
         vSX.setBanned(user_id, true)
-        vSX.kick(source, ""..vSX.Lang("BANNED")..""..reason.."")
+        vSX.kick(source, ""..Lang("BANNED")..""..reason.."")
     end
 end
 
@@ -266,12 +266,12 @@ AddEventHandler("playerConnecting", function(name, setMessage)
                 end)
             else
                 print("[vSX] "..name.." ("..GetPlayerEP(source)..") rejected: identification error")
-                reject(vSX.Lang("IDENTIFIER_ERROR"))
+                reject(Lang("IDENTIFIER_ERROR"))
             end
         end)
     else
         print("[vSX] "..name.." ("..GetPlayerEP(source)..") rejected: missing identifiers")
-        setMessage(vSX.Lang("MISSING_IDENTIFIERS"))
+        setMessage(Lang("MISSING_IDENTIFIERS"))
         CancelEvent()
     end
     Debug.pend()
@@ -314,7 +314,7 @@ AddEventHandler("vSXcli:playerSpawned", function()
         end
         SetTimeout(2000, function()
             TriggerEvent("vSX:playerSpawn", user_id, player, first_spawn)
-            TriggerClientEvent("vsx_notify:Alert", player, vSX.Lang("SERVER_NAME_NOTIFY"), vSX.Lang("SERVER_NOTIFY"), 5000, "info")
+            TriggerClientEvent("vsx_notify:Alert", player, Lang("SERVER_NAME_NOTIFY"), Lang("SERVER_NOTIFY"), 5000, "info")
         end)
     end
     local idk = vSX.getSourceIdKey(player)
