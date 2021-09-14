@@ -208,7 +208,7 @@ AddEventHandler("vSX:playerSpawn", function(user_id, source, first_spawn)
             end
         end
         vSX.addUserGroup(user_id, "vSX User")
-        if vSX.getUserGroupByType(user_id, "job") == "" then
+        if user_id ~= nil and vSX.getUserGroupByType(user_id, "job") == "" then
             vSX.addUserGroup(user_id, "Unemployed")
         end
     end
