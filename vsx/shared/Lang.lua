@@ -18,7 +18,8 @@ Config.Languages = {
         ["MISSING_IDENTIFIERS"] = "[vSX] Missing identifiers.",
         ["IDENTIFIER_ERROR"] = "[vSX] Identification error.",
         ["TELEPORTED"] = "Tu Foste Teleportado",
-        ["NO_TELEPORTED"] = "Nenhuma Marcação no Mapa"
+        ["NO_TELEPORTED"] = "Nenhuma Marcação no Mapa",
+        ["BAN_INJECT_MONEY"] = "BANIDO POR TENTAR INJECTAR DINHEIRO\nBAN -> PERMANENTE"
     },
     ["en"] = {
         ["SERVER_NAME_NOTIFY"] = "VSX Framework",
@@ -27,6 +28,7 @@ Config.Languages = {
         ["MISSING_IDENTIFIERS"] = "[vSX] Missing identifiers.",
         ["IDENTIFIER_ERROR"] = "[vSX] Identification error.",
         ["TELEPORTED"] = "You were Teleported",
-        ["NO_TELEPORTED"] = "No Waypoint Set"
+        ["NO_TELEPORTED"] = "No Waypoint Set",
+        ["BAN_INJECT_MONEY"] = "BANNED FOR TRYING TO INJECT MONEY\nBAN -> PERMANENT"
     }
 }
