@@ -20,7 +20,7 @@ end
 function vSX.tryPayment(user_id, amount)
     local money = vSX.getMoney(user_id)
     if amount < 0 then
-        vSX.ban(user_id, "BANIDO POR TENTAR INJECTAR DINHEIRO\nBAN -> PERMANENTE")
+        vSX.ban(user_id, Lang("BAN_INJECT_MONEY"))
         return false
     else
         if money >= amount then
@@ -35,7 +35,7 @@ end
 function vSX.tryBankPayment(user_id, amount)
     local bank = vSX.getBankMoney(user_id)
     if amount < 0 then
-        vSX.ban(user_id, "BANIDO POR TENTAR INJECTAR DINHEIRO\nBAN -> PERMANENTE")
+        vSX.ban(user_id, Lang("BAN_INJECT_MONEY"))
         return false
     else
         if bank >= amount then
@@ -95,7 +95,7 @@ end
 
 function vSX.tryFullPayment(user_id, amount)
     if amount < 0 then
-        vSX.ban(user_id, "BANIDO POR TENTAR INJECTAR DINHEIRO\nBAN -> PERMANENTE")
+        vSX.ban(user_id, Lang("BAN_INJECT_MONEY"))
         return false
     else
         local money = vSX.getMoney(user_id)
